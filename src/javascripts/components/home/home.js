@@ -2,7 +2,9 @@ import utils from '../../helpers/utils';
 
 
 const myNavBar = () => {
-  const domString = '<h2> PINTEREST</h2>';
+  let domString = '';
+  domString += '<h2> PINTEREST</h2>';
+  domString += '<img src = "">';
   utils.printToDom('home', domString);
 };
 
