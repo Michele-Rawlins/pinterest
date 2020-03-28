@@ -5,7 +5,7 @@ This is a site  like Pinterest with Boards and Users and Pins.
 
 
 ## Screen shots
-![Main Screen](./screenshots/Pinterest.png)
+![Main Screen](./src/screenshots/Pinterest.png)
 
 
 ## Instructions how to run
