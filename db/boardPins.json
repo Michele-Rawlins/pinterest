@@ -1,91 +1,94 @@
-{"boardPins1": {
-  "boardId":"",
-  "pinId": ""
-},
 
-"boardPins2": {
-  "boardId":"",
-  "pinId": ""
-},
-"boardPins3": {
-  "boardId":"",
-  "pinId": ""
-},
 
-"boardPins4": {
-  "boardId":"",
-  "pinId": ""
-},
-  "boardPins5": {
-    "boardId":"",
-    "pinId": ""
-  },
+{
+	"boardPins1": {
+		"boardId": "",
+		"pinId": ""
+	},
 
-  "boardPins6": {
-    "boardId":"",
-    "pinId": ""
-  },
-  "boardPins7": {
-    "boardId":"",
-    "pinId": ""
-  },
+	"boardPins2": {
+		"boardId": "",
+		"pinId": ""
+	},
+	"boardPins3": {
+		"boardId": "",
+		"pinId": ""
+	},
 
-  "boardPins8": {
-    "boardId":"",
-    "pinId": ""
-  },
-  "boardPins9": {
-    "boardId":"",
-    "pinId": ""
-  },
+	"boardPins4": {
+		"boardId": "",
+		"pinId": ""
+	},
+	"boardPins5": {
+		"boardId": "",
+		"pinId": ""
+	},
 
-  "boardPins10": {
-    "boardId":"",
-    "pinId": ""
-  },
-  "boardPins11": {
-    "boardId":"",
-    "pinId": ""
-  },
+	"boardPins6": {
+		"boardId": "",
+		"pinId": ""
+	},
+	"boardPins7": {
+		"boardId": "",
+		"pinId": ""
+	},
 
-  "boardPins12": {
-    "boardId":"",
-    "pinId": ""
-  },
-  "boardPins13": {
-    "boardId":"",
-    "pinId": ""
-  },
+	"boardPins8": {
+		"boardId": "",
+		"pinId": ""
+	},
+	"boardPins9": {
+		"boardId": "",
+		"pinId": ""
+	},
 
-  "boardPins14": {
-    "boardId":"",
-    "pinId": ""
-  },
-  "boardPins15": {
-    "boardId":"",
-    "pinId": ""
-  },
+	"boardPins10": {
+		"boardId": "",
+		"pinId": ""
+	},
+	"boardPins11": {
+		"boardId": "",
+		"pinId": ""
+	},
 
-  "boardPins16": {
-    "boardId":"",
-    "pinId": ""
-  }, 
-  "boardPins17": {
-    "boardId":"",
-    "pinId": ""
-  },
+	"boardPins12": {
+		"boardId": "",
+		"pinId": ""
+	},
+	"boardPins13": {
+		"boardId": "",
+		"pinId": ""
+	},
 
-  "boardPins18": {
-    "boardId":"",
-    "pinId": ""
-  },
-  "boardPins19": {
-    "boardId":"",
-    "pinId": ""
-  },
+	"boardPins14": {
+		"boardId": "",
+		"pinId": ""
+	},
+	"boardPins15": {
+		"boardId": "",
+		"pinId": ""
+	},
 
-  "boardPins20": {
-    "boardId":"",
-    "pinId": ""
-  }
+	"boardPins16": {
+		"boardId": "",
+		"pinId": ""
+	},
+	"boardPins17": {
+		"boardId": "",
+		"pinId": ""
+	},
+
+	"boardPins18": {
+		"boardId": "",
+		"pinId": ""
+	},
+	"boardPins19": {
+		"boardId": "",
+		"pinId": ""
+	},
+
+	"boardPins20": {
+		"boardId": "",
+		"pinId": ""
+	}
 }
