@@ -1,32 +1,32 @@
 {
   "pin1": {
-    "name":"",
+    "name":"bathroom",
     "pinId": "",
-    "url": ""
+    "photo": "../src/pins/bathroom.jpg"
 },
   "pin2":{
-  "name":"",
+  "name":"businessCasual",
   "pinId": "",
   "url": ""
 },
 "pin3":{
-  "name":"",
+  "name":"camino",
   "pinId": "",
   "url": ""
 },
 "pin4":{
-"name":"",
+"name":"businessoutfit",
 "pinId": "",
 "url": ""
 },
 
 "pin5":{
-  "name":"",
+  "name":"casualOutfit",
   "pinId": "",
   "url": ""
 },
 "pin6":{
-"name":"",
+"name":"caminoPortueguese",
 "pinId": "",
 "url": ""
 },
