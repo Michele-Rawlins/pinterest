@@ -1,94 +1,93 @@
 
-
 {
 	"boardPins1": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "AIzaSyD7AgsuFYH4Q14Bx4srEiGcUjwCV4m7wO4",
+		"pinId": "pin1"
 	},
 
 	"boardPins2": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "board2",
+		"pinId": "pin2"
 	},
 	"boardPins3": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "AIzaSyD7AgsuFYH4Q14Bx4srEiGcUjwCV4m7wO4",
+		"pinId": "pin3"
 	},
 
 	"boardPins4": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "board1",
+		"pinId": "pin2"
 	},
 	"boardPins5": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "board5",
+		"pinId": "pin1"
 	},
 
 	"boardPins6": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "board4",
+		"pinId": "pin1"
 	},
 	"boardPins7": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "board2",
+		"pinId": "pin2"
 	},
 
 	"boardPins8": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "board1",
+		"pinId": "pin2"
 	},
 	"boardPins9": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "board2",
+		"pinId": "pin1"
 	},
 
 	"boardPins10": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "board3",
+		"pinId": "pin1"
 	},
 	"boardPins11": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "board1",
+		"pinId": "pin2"
 	},
 
 	"boardPins12": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "board2",
+		"pinId": "pin2"
 	},
 	"boardPins13": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "board2",
+		"pinId": "pin5"
 	},
 
 	"boardPins14": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "board1",
+		"pinId": "pin4"
 	},
 	"boardPins15": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "board4",
+		"pinId": "pin3"
 	},
 
 	"boardPins16": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "board2",
+		"pinId": "pin1"
 	},
 	"boardPins17": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "board1",
+		"pinId": "pin1"
 	},
 
 	"boardPins18": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "board1",
+		"pinId": "pin2"
 	},
 	"boardPins19": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "board3",
+		"pinId": "pin3"
 	},
 
 	"boardPins20": {
-		"boardId": "",
-		"pinId": ""
+		"boardUId": "board4",
+		"pinId": "pin2"
 	}
 }

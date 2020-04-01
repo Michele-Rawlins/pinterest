@@ -9,7 +9,7 @@ const buildBoards = () => {
       let domString = '';
       domString += '<h2 class="text-center">boardhouse</h2>';
       domString += '<div class="d-flex flex-wrap">';
-      boards.forEach((boards) => {
+      boards.forEach((board) => {
         domString += boardComponent.boardMaker(board);
       });
       domString += '</div>';
