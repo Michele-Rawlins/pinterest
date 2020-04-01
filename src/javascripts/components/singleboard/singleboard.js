@@ -9,7 +9,7 @@ const buildBoard = (e) => {
       domString += '<h2 class="text-center">Featured Farmer</h2>';
       domString += '<div class="col-12">';
       domString += '<div class="card text-white bg-dark">';
-      domString += `<div class="card-header">Farmer ${singleBoard.name} (Age: ${singleFarmer.age})</div>`;
+      domString += `<div class="card-header">Farmer ${singleBoard.name} (Age: ${singleBoard.age})</div>`;
       domString += '<div class="card-body">';
       domString += '<h3 class="card-title">Cow(s) Owned:</h3>';
       singleBoard.pins.forEach((pin) => {
