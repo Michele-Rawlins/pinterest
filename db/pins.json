@@ -2,22 +2,22 @@
   "pin1": {
     "name":"bathroom",
     "pinId": "",
-    "photo": "../src/pins/bathroom.jpg"
+    "url": "https://images.unsplash.com/photo-1561817223-f67e69e6bd6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80"
 },
   "pin2":{
   "name":"businessCasual",
   "pinId": "",
-  "url": ""
+  "url": "https://lh3.googleusercontent.com/proxy/fBAB9W9Y2xft1TTO9fSb1OlcRdQZSta5X4kVQ8JpCThXqvqlNJ6BCzjgufSaHCzbMKzkN0ty4Rfh-SkDZbTS_F23USmLHkIA5sQd2FwAEh9wBp4nr0IJbFzt1sHCh6iXZvzTH5AiyYjtZKGb-H0PZ14"
 },
 "pin3":{
   "name":"camino",
   "pinId": "",
-  "url": ""
+  "url": "https://santiagoways.com/wp-content/uploads/2017/02/camino-santiago-portugal-coast.jpg"
 },
 "pin4":{
 "name":"businessoutfit",
 "pinId": "",
-"url": ""
+"url": "https://www.belletag.com/wp-content/uploads/2016/05/work-outfits.jpg"
 },
 
 "pin5":{

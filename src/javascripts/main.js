@@ -13,6 +13,8 @@ const init = () => {
   navlogo.myNavBar();
   authData.checkLoginStatus();
   auth.loginButton();
+  // $('body').on('mouseenter', '.farmer-card', (e) => e.target.closest('.card').classList.add('bg-danger'));
+  // $('body').on('mouseleave', '.farmer-card', (e) => e.target.closest('.card').classList.remove('bg-danger'));
 };
 
 init();
