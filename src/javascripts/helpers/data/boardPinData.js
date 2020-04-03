@@ -4,8 +4,8 @@ import apiKeys from '../apiKeys.json';
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
 const getBoardPinsByBoardUid = (uid) => new Promise((resolve, reject) => {
-  // axios.get(`${baseUrl}/boards.json?orderBy="uid"&equalTo="${uid}"`)
-  // axios.get(`${baseUrl}/pins.json?orderBy="boardId"&equalTo="${boardId}"`)
+  // axios.get(`${baseUrl}/boards.json?orderBy="uid"&equalTo="${uid}"`);
+  // axios.get(`${baseUrl}/pins.json?orderBy="boardId"&equalTo="${boardId}"`);
   axios.get(`${baseUrl}/boardPins.json?orderBy="boardUid"&equalTo="${uid}"`)
     .then((response) => {
       const demBoardPins = response.data;
