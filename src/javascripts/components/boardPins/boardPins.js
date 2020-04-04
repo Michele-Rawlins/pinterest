@@ -31,4 +31,4 @@ const buildPins = () => {
     .catch((err) => console.error('get pins broke', err));
 };
 
-export default { buildPins };
+export default { buildPins, removePin };
