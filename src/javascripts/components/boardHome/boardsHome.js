@@ -7,13 +7,13 @@ const buildBoards = () => {
   boardData.getBoards()
     .then((boards) => {
       let domString = '';
-      domString += '<h2 class="text-center">boardhouse</h2>';
+      domString += '<h1 class="text-center">Boards</h1>';
       domString += '<div class="d-flex flex-wrap">';
       boards.forEach((board) => {
         domString += boardComponent.boardMaker(board);
       });
       domString += '</div>';
-      utils.printToDom('farmhouse', domString);
+      utils.printToDom('boards', domString);
       $('body').on('click', '.board-card', singleBoard.buildBoard);
     })
     .catch((err) => console.error('problem with getBoards', err));

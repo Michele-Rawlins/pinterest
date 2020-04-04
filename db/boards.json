@@ -1,26 +1,27 @@
 {
 	"board1": {
 		"name": "Design",
-		"images": " "
+		"images": " ",
+		"uid": ""
 
 	},
 	"board2": {
 		"name": "Outfits",
-		"images": " "
+		"uid": " "
 	},
 
 	"board3": {
 		"name": "Travel",
-		"images": " "
+		"uid": " "
 
 	},
 	"board4": {
 		"name": "DreamBoard",
-		"images": " "
+		"uid": " "
 	},
 	"board5": {
 		"name": "Inspiration",
-		"images": " "
+		"uid": " "
 	}
 
 }
