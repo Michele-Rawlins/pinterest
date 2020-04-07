@@ -1,5 +1,6 @@
 {
 	"boards": "",
 	"pins": "random",
-	"boardpins": "moohi"
+	"boardpins": "moohi",
+	"user": "yadada"
 }

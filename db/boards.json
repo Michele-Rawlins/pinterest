@@ -2,26 +2,29 @@
 	"board1": {
 		"name": "Design",
 		"images": " ",
-		"uid": ""
+		"uid": "AIzaSyB9sFcosh7lqEMiIstTYoW9E05K5ZQDaxk"
 
 	},
 	"board2": {
 		"name": "Outfits",
-		"uid": " "
+		"uid": "AIzaSyB9sFcosh7lqEMiIstTYoW9E05K5ZQDaxk"
 	},
 
 	"board3": {
 		"name": "Travel",
-		"uid": " "
+		"uid": "AIzaSyB9sFcosh7lqEMiIstTYoW9E05K5ZQDaxk"
 
 	},
 	"board4": {
 		"name": "DreamBoard",
-		"uid": " "
+		"uid": "AIzaSyB9sFcosh7lqEMiIstTYoW9E05K5ZQDaxk"
 	},
 	"board5": {
 		"name": "Inspiration",
-		"uid": " "
-	}
-
+		"uid": "12345"
+	},
+"board6": {
+	"name": "Generic",
+	"uid": "12345"
+}
 }
