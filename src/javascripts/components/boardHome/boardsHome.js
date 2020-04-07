@@ -6,6 +6,7 @@ import utils from '../../helpers/utils';
 const buildBoards = () => {
   boardData.getBoards()
     .then((boards) => {
+      console.error('boards', boards);
       let domString = '';
       domString += '<h1 class="text-center">Boards</h1>';
       domString += '<div class="d-flex flex-wrap">';

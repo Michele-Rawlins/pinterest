@@ -35,13 +35,13 @@ const getSingleBoardWithPins = (boardId) => new Promise((resolve, reject) => {
 });
 
 const completelyRemovePin = (pinId) => new Promise((resolve, reject) => {
-  pinData.deleteCow(pinId)
+  pinData.deletePin(pinId)
     .then(() => {
       // 1.  GET all farmerCows by cowId
       boardPinData.getBoardPinsByPinId(pinId).then((boardPins) => {
         // 2.  loop over all farmerCows from step 1 and DELETE each one
         boardPins.forEach((fPin) => {
-          boardPins.deleteFarmerCow(fPin.id);
+          boardPins.deleteBoardPin(fPin.id);
         });
         resolve();
       });
