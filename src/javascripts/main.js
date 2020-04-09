@@ -13,6 +13,7 @@ const init = () => {
   navlogo.myNavBar();
   authData.checkLoginStatus();
   auth.loginButton();
+  navlogo.logoutEvent();
   $('body').on('mouseenter', '.pin-card', (e) => e.target.closest('.card').classList.add('bg-danger'));
   $('body').on('mouseleave', '.pin-card', (e) => e.target.closest('.card').classList.remove('bg-danger'));
 };
