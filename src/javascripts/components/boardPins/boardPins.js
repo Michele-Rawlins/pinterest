@@ -25,7 +25,7 @@ const buildPins = () => {
         domString += pinComponent.pinMaker(pin);
       });
       domString += '</div>';
-      utils.printToDom('boards', domString);
+      utils.printToDom('pins', domString);
       $('body').on('click', '.delete-pin', removePin);
     })
     .catch((err) => console.error('get pins broke', err));
