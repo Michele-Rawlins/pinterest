@@ -4,7 +4,7 @@ const pinMaker = (pin) => {
   domString += '<div class="card" style="width: 18rem;">';
   domString += `<div class="pin-card" id="${pin.id}">`;
   domString += `<div class="card-header">${pin.name}</div>`;
-  domString += `<img class="card-img-top" src="${pin.url}" alt="Card image cap">`;
+  domString += `<img class="card-img-top" src="${pin.url}" alt="Pin image showing a pic of title">`;
   domString += '<div class="card-body">';
   // domString += '<p class="card-text">Some quick example text to build on the card title and make up the bulk of.</p>';
   domString += '<button class="btn btn-danger delete-pin"><i class="far fa-trash-alt"></i></button>';
