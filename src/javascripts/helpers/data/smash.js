@@ -3,33 +3,25 @@ import boardPinData from './boardPinData';
 import pinData from './pinData';
 
 const getSingleBoardWithPins = (boardId) => new Promise((resolve, reject) => {
-  boardData.getBoardrById(boardId)
+  boardData.getBoardById(boardId)
     .then((response) => {
       const board = response.data;
       board.id = boardId;
       board.pins = [];
-      // 1.  get farmerCows by farmer uid
-      boardPinData.getboardPinByBoardUid(board.uid).then((boardPins) => {
-        // 2.  get ALL cows
-        pinData.getPins().then((allPins) => {
-          // 3.   SMASH
-          boardPins.forEach((boardPin) => {
-            const pin = allPins.find((x) => x.id === boardPin.pinId);
-            board.pins.push(pin);
-          });
-          // {
-          //   age: 1000,
-          //   name: 'zoe',
-          //   uid: 'A06GVOBrTNOc6scEZzPrOcij0Yu2',
-          //   id: 'farmer1',
-          //   cows: [
-          //     { id: 'cow1', breed: "Jersey", location: "NSS", name: "Bessie", weight: 30 },
-          //     { id: 'cow3', breed: "Angus", location: "NSS", name: "Steak", weight: 50000000000}
-          //   ]
-          // }
-          resolve(board);
+      // Getting all relationships (boardId, pinId) where boardId equals board.id
+      boardPinData.getBoardPinsByBoardId(board.id)
+        .then((boardPins) => {
+        // Getting all pins
+          pinData.getPins()
+            .then((allPins) => {
+              // Associating pinId with the actual pin
+              boardPins.forEach((boardPin) => {
+                const foundPin = allPins.find((x) => x.id === boardPin.pinId);
+                board.pins.push(foundPin);
+              });
+              resolve(board);
+            });
         });
-      });
     })
     .catch((err) => reject(err));
 });

@@ -5,7 +5,7 @@ import utils from '../../helpers/utils';
 import pinComponent from '../pins/pins';
 
 const removePin = (e) => {
-  const pinId = e.target.closest('.card').id;
+  const pinId = e.target.closest('.board-card').id;
   smashData.completelyRemovePin(pinId)
     .then(() => {
       // eslint-disable-next-line no-use-before-define
