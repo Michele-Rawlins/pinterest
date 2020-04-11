@@ -7,6 +7,7 @@ const buildBoard = (e) => {
     .then((singleBoard) => {
       console.error('singleboard', singleBoard);
       let domString = '';
+      // add a collaspse form here
       domString += '<h2 class="text-center">Featured Board</h2>';
       domString += '<div class="col-12">';
       domString += '<div class="card text-white bg-dark">';
