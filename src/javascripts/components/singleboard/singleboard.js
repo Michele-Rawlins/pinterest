@@ -13,10 +13,12 @@ const buildBoard = (e) => {
       domString += '<div class="card text-white bg-dark">';
       domString += `<div class="card-header">Board ${singleBoard.name}</div>`;
       domString += '<div class="card-body">';
-      domString += '<h3 class="card-title">Pin(s) Owned:</h3>';
+      domString += '<h3 class="card-title">My Pins</h3>';
       singleBoard.pins.forEach((pin) => {
         console.error('pin', pin);
-        domString += `<p class="card-text">${pin.name} (${pin.url})</p>`;
+        domString += `<p class="card-text">${pin.name}</p>`;
+        domString += `<img src = "${pin.url}">`;
+        domString += '<button class="btn btn-danger delete-pin"><i class="far fa-trash-alt"></i></button>';
       });
       domString += '</div>';
       domString += '</div>';
