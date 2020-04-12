@@ -20,6 +20,6 @@ const getPins = () => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-// const deleteCow = (cowId) => axios.delete(`${baseUrl}/cows/${cowId}.json`);
+const deletePin = (pinId) => axios.delete(`${baseUrl}/pins/${pinId}.json`);
 
-export default { getPins };
+export default { getPins, deletePin };
