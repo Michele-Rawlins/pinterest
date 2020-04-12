@@ -33,6 +33,22 @@ const completelyRemovePin = (pinId) => new Promise((resolve, reject) => {
       boardPinData.getBoardPinsByPinId(pinId).then((boardPins) => {
         // 2.  loop over all farmerCows from step 1 and DELETE each one
         boardPins.forEach((fPin) => {
+        // removed .deleteBoardPin
+          boardPins.deletePin(fPin.id);
+        });
+        resolve();
+      });
+    })
+    .catch((err) => reject(err));
+});
+
+const completelyRemoveBoard = (boardId) => new Promise((resolve, reject) => {
+  boardData.deleteBoard(boardId)
+    .then(() => {
+      // 1.  GET all farmerCows by cowId
+      boardPinData.getBoardPinsByPinId(boardId).then((boardPins) => {
+        // 2.  loop over all farmerCows from step 1 and DELETE each one
+        boardPins.forEach((fPin) => {
           boardPins.deleteBoardPin(fPin.id);
         });
         resolve();
@@ -41,4 +57,4 @@ const completelyRemovePin = (pinId) => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-export default { getSingleBoardWithPins, completelyRemovePin };
+export default { getSingleBoardWithPins, completelyRemovePin, completelyRemoveBoard };
