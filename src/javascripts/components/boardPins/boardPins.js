@@ -10,7 +10,7 @@ const removePin = (e) => {
     .then(() => {
       // eslint-disable-next-line no-use-before-define
       buildPins();
-      utils.printToDom('single-board', '');
+      utils.printToDom('pins', '');
     })
     .catch((err) => console.error('could not delete board', err));
 };

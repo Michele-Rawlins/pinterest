@@ -15,7 +15,6 @@ const removeBoard = (e) => {
     .catch((err) => console.error('could not delete board', err));
 };
 
-
 const buildBoards = () => {
   boardData.getBoards()
     .then((boards) => {

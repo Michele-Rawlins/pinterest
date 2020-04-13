@@ -34,7 +34,7 @@ const completelyRemovePin = (pinId) => new Promise((resolve, reject) => {
         // 2.  loop over all farmerCows from step 1 and DELETE each one
         boardPins.forEach((fPin) => {
         // removed .deleteBoardPin
-          boardPins.deletePin(fPin.id);
+          pinData.deletePin(fPin.id);
         });
         resolve();
       });
