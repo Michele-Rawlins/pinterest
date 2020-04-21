@@ -1,11 +1,28 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
-
+@import '../styles/colors.scss';
 body {
-  // color: rgb(154, 182, 235);
-  background: linear-gradient(#e66465, #9198e5);
+  background: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+navbar {
+color: $color2-light-green-gray;
+
+}
+.card-header {
+  color:$color1-salmon-pink;
 }
 
+.card-pins {
+color:$color4-medium-brown
+}
+
+button {
+  text-align: center;
+}
 img {
   size: 24em;
   width: 200px;
