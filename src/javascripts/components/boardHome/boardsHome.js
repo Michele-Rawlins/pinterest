@@ -21,8 +21,7 @@ const buildBoards = () => {
       // console.error('boards', boards);
       let domString = '';
       domString += '<h1 class="text-center">Boards</h1>';
-      domString += '<div class="card">';
-      domString += '<div class="card d-flex flex-wrap">';
+      domString += '<div class="card-board d-flex flex-wrap">';
       boards.forEach((board) => {
         domString += boardComponent.boardMaker(board);
       });
