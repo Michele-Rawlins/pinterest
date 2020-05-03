@@ -30,19 +30,23 @@ const buildBoard = (e) => {
       domString += '</div>';
       domString += '</div>';
       domString += '<h2 class="text-center">Featured Board</h2>';
-      domString += '<div class="col-6">';
+      domString += '<div class="col-12">';
       domString += '<div class="card text-white bg-dark">';
       domString += `<div class="card-header">Board ${singleBoard.name}</div>`;
       domString += '<div class="card-body">';
       domString += '<h3 class="card-title">My Pins</h3>';
       singleBoard.pins.forEach((pin) => {
         console.error('pin', pin);
+        domString += '<div class = "d-flex flex-wrap">';
         domString += `<p class="card-text">${pin.name}</p>`;
         domString += `<img src = "${pin.url}">`;
         domString += '<button class="btn btn-danger delete-pin"><i class="far fa-trash-alt"></i></button>';
       });
       domString += '</div>';
       domString += '</div>';
+      domString += '</div>';
+      domString += '</div>';
+
 
       utils.printToDom('single-board', domString);
     })
