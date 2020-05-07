@@ -22,6 +22,7 @@ const buildBoards = () => {
       let domString = '';
       domString += '<h2 class="text-center">Boards</h2>';
       domString += '<div class="card-board d-flex flex-wrap">';
+      domString += '<button><i class="fas fa-calendar-plus">Make New Board</i></button>';
       boards.forEach((board) => {
         domString += boardComponent.boardMaker(board);
       });
