@@ -1,21 +1,3 @@
-import pinData from '../../helpers/data/pinData';
-
-const makeNewPin = (e) => {
-  e.preventDefault();
-  const newPin = {
-    Url: $('.card-img-top').val(),
-    name: $('.card-header').val(),
-  };
-  pinData.addPinData(newPin)
-    .then(() => {
-      $('.modal-body input').val('');
-      $('#modalAddEnviroment').modal('hide'); $();
-      // eslint-disable-next-line no-use-before-define
-      pinMaker();
-    })
-    .catch((err) => console.error('could not add Data', err));
-};
-
 
 const pinMaker = (pin) => {
   let domString = '';
@@ -35,7 +17,5 @@ const pinMaker = (pin) => {
   return domString;
 };
 
-const pinEvent = () => {
-  $('body').on('click', ."", makeNewPin)
-}
+
 export default { pinMaker };
