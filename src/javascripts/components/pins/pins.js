@@ -1,7 +1,3 @@
-import pinData from '../../helpers/data/pinData';
-
-
-
 
 const pinMaker = (pin) => {
   let domString = '';

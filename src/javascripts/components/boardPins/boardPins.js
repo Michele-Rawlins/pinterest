@@ -19,13 +19,13 @@ const removePin = (e) => {
 const makeNewPin = (e) => {
   e.preventDefault();
   const newPin = {
-    Url: $('.card-img-top').val(),
-    name: $('.card-header').val(),
+    Url: $('#pin-photo').val(),
+    name: $('#pin-name').val(),
   };
   pinData.addPinData(newPin)
     .then(() => {
       $('.modal-body input').val('');
-      $('#modalAddEnviroment').modal('hide'); $();
+      $('#modalAddPin').modal('hide'); $();
       // eslint-disable-next-line no-use-before-define
       pinComponent.pinMaker();
     })
@@ -36,14 +36,14 @@ const buildPins = () => {
     .then((pins) => {
       let domString = '';
       domString += '<h2 class="text-center">Home</h2>';
-      domString += '<button id="add-New-Pin"><i class="fas fa-map-pin">Add Pin</i></button>'
+      domString += '<button id="add-New-Pin"><i class="fas fa-map-pin">Add Pin</i></button>';
       domString += '<div class="d-flex flex-wrap">';
       pins.forEach((pin) => {
         domString += pinComponent.pinMaker(pin);
       });
       domString += '</div>';
       utils.printToDom('pins', domString);
-      $('body').on('click', '#add-New-Pin', makeNewPin)
+      $('body').on('click', '#add-New-Pin', makeNewPin);
       $('body').on('click', '.delete-pin', removePin);
     })
     .catch((err) => console.error('get pins broke', err));
