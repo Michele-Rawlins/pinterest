@@ -24,10 +24,8 @@ const makeNewPin = (e) => {
   };
   pinData.addPinData(newPin)
     .then(() => {
-      $('.modal-body input').val('');
-      $('#modalAddPin').modal('hide'); $();
-      // eslint-disable-next-line no-use-before-define
       pinComponent.pinMaker();
+      utils.printToDom('new-pin', '');
     })
     .catch((err) => console.error('could not add Data', err));
 };
