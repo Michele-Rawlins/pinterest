@@ -21,7 +21,9 @@ const checkLoginStatus = () => {
       singleBoardDiv.removeClass('hide');
       logoutButton.removeClass('hide');
       boardHome.buildBoards();
+      boardHome.boardEvents();
       boardPins.buildPins();
+      boardPins.pinEvents();
     } else {
       // person is NOT logged in
       authDiv.removeClass('hide');
