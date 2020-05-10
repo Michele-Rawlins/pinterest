@@ -57,4 +57,37 @@ const completelyRemoveBoard = (boardId) => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-export default { getSingleBoardWithPins, completelyRemovePin, completelyRemoveBoard };
+const getPinsWithBoards = () => new Promise((resolve, reject) => {
+  pinData.getPins()
+    .then((pinsResponse) => {
+      boardData.getBoardsByUid().then((boardResponse) => {
+        boardPinData.getBoardPins().then((boardPinResponse) => {
+          const finalPins = [];
+          pinsResponse.forEach((onePin) => {
+            const pin = { boards: [], ...onePin };
+            const boardPinsOwners = boardPinResponse.filter((x) => x.pinId === pin.id);
+            boardResponse.forEach((oneBoard) => {
+              const board = { ...oneBoard };
+              const isOwner = boardPinsOwners.find((x) => x.boardUid === board.uid);
+              // not owner: undefined !== undefined => false
+              // are owner: {age: 83, name: "luke", uid: "12345", id: "farmer2"} !== undefined => true
+              // farmer.isChecked = isOwner !== undefined;
+              board.boardPinId = isOwner ? isOwner.id : `nope-${pin.id}-${board.id}`;
+              pin.boards.push(board);
+            });
+            finalPins.push(pin);
+          });
+          resolve(finalPins);
+        });
+      });
+    })
+    .catch((err) => reject(err));
+});
+
+
+export default {
+  getSingleBoardWithPins,
+  completelyRemovePin,
+  completelyRemoveBoard,
+  getPinsWithBoards,
+};

@@ -35,10 +35,10 @@ const buildBoard = (e) => {
       domString += `<div class="card-header">Board ${singleBoard.name}</div>`;
       domString += '<div class="card-body">';
       domString += '<h3 class="card-title">My Pins</h3>';
-      singleBoard.pins.forEach((pin) => {
-        console.error('pin', pin);
-        domString += `<p class="card-text">${pin.name}</p>`;
-        domString += `<img src = "${pin.url}">`;
+      singleBoard.pins.forEach((pins) => {
+        console.error('pin', pins);
+        domString += `<p class="card-text">${pins.name}</p>`;
+        domString += `<img src = "${pins.url}">`;
         domString += '<button class="btn btn-danger delete-pin"><i class="far fa-trash-alt"></i></button>';
       });
       domString += '</div>';
