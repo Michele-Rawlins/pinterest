@@ -14,7 +14,7 @@ const logoutEvent = () => {
 
 const myNavBar = () => {
   let domString = '';
-  domString += '<h1>PINTEREST</h1>';
+  domString += '<h1 class="center">PINTEREST</h1>';
   utils.printToDom('home', domString);
 };
 

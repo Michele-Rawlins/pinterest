@@ -4,6 +4,7 @@ import smashData from '../../helpers/data/smash';
 import utils from '../../helpers/utils';
 import pinComponent from '../pins/pins';
 import newPinForm from '../newPin/newPin';
+import editPinModal from '../editPins/editPins';
 
 
 const removePin = (e) => {
@@ -35,10 +36,36 @@ const makeNewPin = (e) => {
     })
     .catch((err) => console.error('could not add Data', err));
 };
+const editPin = (e) => {
+  e.preventDefault();
+  const pinId = e.target.closest('.pin-card').id;
+  $('#modalEditPin').modal('show');
+  editPinModal.editPinForm(pinId);
+};
 
+// const updatePin = () => {
+//   const pinId = $('.edit-pin-form-tag').data('id');
+//   const boardid = $('.pin-card').data('board-id');
+//   const title = $('.pinDiv').attr('id');
+//   const editedPin = {
+//     boardid,
+//     credit: $('#edit-pin-credit').val(),
+//     description: $('#edit-pin-desc').val(),
+//     imageUrl: $('#edit-pin-imgUrl').val(),
+//     pinTitle: $('#edit-pin-pinTitle').val(),
+//     title,
+//   };
+//   pinData.updatePin(pinId, editedPin)
+//     .then(() => {
+//       $('#modalEditPin').modal('hide');
+//       // eslint-disable-next-line no-use-before-define
+//       viewSingleBoard(boardid);
+//     })
+//     .catch((error) => console.error('could not update the pin', error));
+// };
 const pinEvents = () => {
   $('body').on('click', '#button-save-pin', makeNewPin);
-  // $('body').on('click', '.edit-pin-button', editPin);
+  $('body').on('click', '.edit-pin-button', editPin);
   // $('body').on('click', '#button-save-edit-pin', updatePin);
   $('body').on('click', '.add-New-Pin', newPinForm.showAddPinForm);
 };
